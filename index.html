@@ -2,13 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width-device-width" initial-scale="1.0" />
+    <title>Hello world!</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500;600&family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/greeting.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/quotes.js"></script>
+    <script defer src="js/background.js"></script>
+    <script defer src="js/todo.js"></script>
+    <script defer src="js/weather.js"></script>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
+    <h2 id="greeting" classname="hidden"></h2>
     <form id="login-form" classname="hidden">
       <input
         required
@@ -16,13 +28,18 @@
         type="text"
         placeholder="what is your name?"
       />
-      <button>Log In</button>
     </form>
-    <h2 id="greeting" classname="hidden"></h2>
+
+    <h2 id="clock">00:00:00</h2>
     <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
+      <input
+        type="text"
+        placeholder="Write a To Do and Press Enter / Delete by Double-Clicking"
+        required
+      />
     </form>
     <ul id="todo-list"></ul>
+
     <div id="quotes">
       <span></span>
       <span></span>
@@ -31,11 +48,5 @@
       <span></span>
       <span></span>
     </div>
-    <script src="js/greeting.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/quotes.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
   </body>
 </html>
